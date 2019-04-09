@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane maxHeight="1000.0" maxWidth="1000.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="button_siete" mnemonicParsing="false" onAction="#siete" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="7" GridPane.rowIndex="2" />
+      <Button fx:id="button_ocho" mnemonicParsing="false" onAction="#ocho" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="button_cuatro" mnemonicParsing="false" onAction="#cuatro" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="4" GridPane.rowIndex="3" />
+      <Button fx:id="button_cinco" mnemonicParsing="false" onAction="#cinco" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="button_nueve" mnemonicParsing="false" onAction="#nueve" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="button_multiplicar" mnemonicParsing="false" onAction="#multiplicar" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-font-size: 30px;" text="X" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button fx:id="button_seis" mnemonicParsing="false" onAction="#seis" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button fx:id="button_restar" mnemonicParsing="false" onAction="#restar" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-font-size: 30px;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button fx:id="button_uno" mnemonicParsing="false" onAction="#uno" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="1" GridPane.rowIndex="4" />
+      <Button fx:id="button_dos" mnemonicParsing="false" onAction="#dos" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="button_tres" mnemonicParsing="false" onAction="#tres" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button fx:id="button_sumar" mnemonicParsing="false" onAction="#sumar" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-font-size: 30px;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Button fx:id="button_cero" mnemonicParsing="false" onAction="#cero" prefHeight="500.0" prefWidth="1000.0" style="-fx-font-size: 30px;" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Button fx:id="button_coma" mnemonicParsing="false" onAction="#coma" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px;" text="," GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button fx:id="button_igual" mnemonicParsing="false" onAction="#resultado" prefHeight="81.0" prefWidth="100.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-font-size: 30px;" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="button_dividir" mnemonicParsing="false" onAction="#dividir" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-font-size: 30px;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button fx:id="button_porciento" mnemonicParsing="false" onAction="#porciento" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-font-size: 30px;" text="\%" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="button_borrar" mnemonicParsing="false" onAction="#borrar" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: red; -fx-border-color: white; -fx-font-size: 30px;" text="c" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="button_ac" mnemonicParsing="false" onAction="#ac" prefHeight="500.0" prefWidth="500.0" style="-fx-font-size: 30px; -fx-background-color: red; -fx-border-color: white;" text="AC" textFill="WHITE" GridPane.rowIndex="1" />
+      <TextField fx:id="myTextfield1" alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: lightgrey;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="myTextfield4" alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="3">
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="myTextfield3" alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="2">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="myTextfield2" alignment="CENTER_RIGHT" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+   </children>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+   <effect>
+      <DropShadow />
+   </effect>
+</GridPane>
